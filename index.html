@@ -8,6 +8,34 @@
     <title>To Do List</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="inputTask">Task</label>
+              <input type="text" class="form-control" id="inputTask">
+            </div>
+            <div class="form-group">
+              <label for="inputDueDay">dueDay</label>
+              <input type="text" class="form-control" id="inputDueDay">
+            </div>
+            <div class="form-group">
+              <label for="inputNotes">notes</label>
+              <input type="text" class="form-control" id="inputNotes">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="output"></ul>
+        </div>
+        <div class="col-md-6" id="show-details">
+          <h2></h2>
+          <p>Due day: <span class="dueDay"></span></p>
+          <p>Note: <span class="note"></span></p>
+            <span id="button"></span>
+        </div>
 
+      </div>
+    </div>
   </body>
 </html>
